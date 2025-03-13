@@ -30,4 +30,8 @@
     .video {
         object-fit: contain;
     }
+
+    .container{
+        padding: 20rem 0; 
+    }
 }

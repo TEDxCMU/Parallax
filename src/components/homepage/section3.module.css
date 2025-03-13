@@ -88,7 +88,7 @@
 @media screen and (max-width: 768px) {
     .wrap{
         flex-direction: column; 
-        padding: 10rem 0 0 0;
+        padding: 5rem 0 5rem 0;
     }
     .wrap2 {
         margin-top: 10rem;
@@ -114,5 +114,8 @@
         font-size: 1.5rem;
         line-height: 1.5em;
     }
-    
+    .container {
+        display: block; 
+        padding-left: 0;
+    }
 }
