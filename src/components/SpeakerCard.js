@@ -45,6 +45,7 @@ export default function SpeakerCard(props) {
         </div>
         <div className={styles.right}>
           <img
+            src={speaker.image.url}
             className={styles.modalImage}
             alt={speaker.name}
           />
