@@ -2,7 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+  "/": "pages/index.js",
+  "/speakers": "pages/speakers.js",
   "/about": "pages/about.js",
-  "/schedule": "pages/schedule.js",
-  "/": "pages/index.js"
+  "/expo": "pages/expo.js"
 }

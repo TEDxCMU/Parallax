@@ -8,7 +8,8 @@ function Section3() {
       <div className={style.wrap}>
         <div className={style.text}>
           <div className={style.blurbStart}>[Parallax]</div>
-          <div className={style.blurbText}>The TEDx Board is incredibly excited to introduce the theme for our 2024 conference - Ignite.<br></br><br></br>Every idea has the power to not only challenge the established but to illuminate new pathways of thought. By sharing these stories, you become the key to unlocking a cascade of ideas in others. </div>
+          <div className={style.blurbText}>The TEDx Board is incredibly excited to introduce the theme for our 2025 conference - Parallax.<br></br><br></br> Ideas evolve when our perspectives shift and realign. Parallax is more than motion—it&rsquo;s discovery, a converging of viewpoints that reveals new possibilities. </div>
+        
         </div>
         <div></div>
       </div>

@@ -32,10 +32,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/about.js"
     ],
-    "/schedule": [
+    "/expo": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/schedule.js"
+      "static/chunks/pages/expo.js"
+    ],
+    "/speakers": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/speakers.js"
     ]
   },
   "ampFirstPages": []
