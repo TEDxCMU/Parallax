@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    padding: 15rem 0 15rem 0; 
+    position: relative;
+    background-color: var(--c-background);
+}
+
+.text {
+    color: var(--c-red);
+    font-family: "Space Mono";
+    font-size: 4.2rem;
+    text-transform: uppercase;
+    width: 45rem;
+    z-index: 5;
+}
+
+.video {
+    width: 60%;
+    height: auto;
+    top: 0;
+    left: 0;
+    background-color: var(--c-background); 
+}
+
+@media (max-width: 768px) {
+    .video {
+        object-fit: contain;
+    }
+}

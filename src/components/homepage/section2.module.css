@@ -1,0 +1,25 @@
+.container {
+    background-color: var(--c-green);
+    height: 113px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.begin {
+    font-family: Pixer, sans-serif;
+    text-transform: uppercase;
+}
+
+.blurb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--c-black);
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: 70px;
+    font-weight: 400;
+    text-transform: uppercase;
+    flex-shrink: 0;
+    margin-right: 50px;
+}

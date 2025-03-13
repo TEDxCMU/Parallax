@@ -1,0 +1,152 @@
+.containerTop {
+    display: grid;
+    height: 60vh; /* 7rem is the height of the navbar */
+    width: 100%;
+    background: radial-gradient(ellipse at top, 
+    rgba(158,182,250, 1) 20%, 
+    rgba(207,241,239, 1) 30%, 
+    rgba(255,228,134) 50%, 
+    rgba(255, 223, 186, 1) 70%);
+    padding: 15rem; 
+}
+
+.containerBottom {
+    top: -1px; 
+    position: relative; /* Ensures the rotated background stays within it */
+    display: flex;
+    padding-top: 35rem;
+    align-items: top;
+    justify-content: center;
+    height: 60vh;
+    width: 100%;
+    overflow: hidden; /* Prevents any rotated elements from overflowing */
+  }
+  
+  .rotatedBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at top, 
+        rgba(158,182,250, 1) 10%, 
+        rgba(207,241,239, 1) 40%, 
+        rgba(255,228,134) 60%, 
+        rgba(255, 223, 186, 1) 70%);
+    transform: rotate(180deg); /* Rotates only the background */
+  }
+
+.middle{
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; /* Ensure it's above */
+    color: black; 
+    display:flex; 
+    background-color: rgba(255, 223, 186, 1);
+}
+
+.middle .left{
+    width: 50%; 
+}
+
+.middle .right{
+    width: 50%; 
+}
+
+.name {
+    font-size: 14em;
+    font-weight: bolder;
+    font-family: "Archivo Narrow", sans-serif;
+    color: black;
+    text-transform: uppercase;
+    justify-self: center;
+    z-index: 5;
+}
+
+.callout{
+    font-size: 20px;
+    font-family: "Archivo Narrow", sans-serif;
+    color: black;
+    text-transform: uppercase;
+    justify-self: center;
+    z-index: 5;
+}
+
+.text {
+    font-size: 2em;
+    font-family: "Helvetica", sans-serif;
+    font-weight: 400;
+    color: black;
+    text-transform: uppercase;
+    justify-self: center;
+    z-index: 5;
+}
+
+.textContainer {
+    position: relative; /* Keeps text above rotated background */
+    text-align: center;
+    z-index: 10; /* Ensures text is on top */
+  }
+
+.tedx{
+    grid-column: 8 / span 2;
+    grid-row: 8;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.29375rem;
+    text-transform: uppercase;
+    text-align: left;
+    z-index: 5;
+}
+
+.datetime {
+    grid-column: 10 / span 2;
+    grid-row: 8;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.29375rem;
+    text-transform: uppercase;
+    text-align: left;
+    z-index: 5;
+}
+
+@media screen and (max-width: 920px) {
+    .name {
+        left: 3rem;
+        font-size: 5em;
+        letter-spacing: 6rem;
+        -webkit-text-stroke-width: 2px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .name {
+        grid-column: 6 / span 1;
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+        letter-spacing: 0.5em;
+        font-size: 8em;
+    }
+
+    .bgImage video, .bgImage canvas {
+        object-position: 75% 50%;
+    }
+
+    .tedx{
+        grid-column: 7 / span 4;
+        grid-row: 6;
+        font-size: 1.5rem;
+    }
+
+    .datetime{
+        grid-column: 7 / span 4;
+        grid-row: 7;
+        font-size: 1.5rem;
+    }
+}
